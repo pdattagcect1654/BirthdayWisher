@@ -16,7 +16,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun Birthday(){
+fun Birthday(name:String){
 MaterialTheme{
     Surface(modifier = Modifier.fillMaxSize(),
         color = Color.Yellow){
@@ -31,7 +31,7 @@ MaterialTheme{
             )
 
             Text(
-                text = "Piyali",
+                text = "$name",
                 fontFamily = FontFamily.Cursive,
                 fontSize = 40.sp,
                 fontWeight = FontWeight.ExtraBold,
@@ -45,5 +45,5 @@ MaterialTheme{
 @Preview
 @Composable
 fun BirthdayTest(){
-Birthday()
+Birthday(name="Piyali")
 }
